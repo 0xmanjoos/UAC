@@ -57,6 +57,7 @@ int main(){
 			if (check == 1) {
 				elevate();
 		} else {
+			destroy();
 			ExitProcess(0);
 		}
 	return 0;
