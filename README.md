@@ -7,4 +7,4 @@ In my case, im using mingw compiler and whist attempting to play with MBR it doe
 
 Anyways its just a braindump, if you feel that any of this code is terrible, unreliable, or just flat out useless..
 
-go fuck yourself :)
+go fuck yourself :) ![kawaii](https://thumbs.gfycat.com/LastVariableGreathornedowl-small.gif)
