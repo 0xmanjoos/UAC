@@ -1,7 +1,7 @@
 #include <windows.h>
 #define WIN32_LEAN_AND_MEAN
 bool admin() {
-	bool fRet = FALSE;
+    bool fRet = FALSE;
     HANDLE hToken = NULL;
     if( OpenProcessToken( GetCurrentProcess( ),TOKEN_QUERY,&hToken ) ) {
         TOKEN_ELEVATION Elevation;
